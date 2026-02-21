@@ -1,10 +1,10 @@
 :root {
     --bg-color: #0a0a0a;
-    --card-bg: #141414;
+    --card-bg: #222222;
     --text-color: #ffffff;
-    --accent-color: #3d1409; /* Basado en tu tema café/naranja */
-    --btn-color: #e6b18a;
-    --btn-hover: #f0c9ab;
+    --accent-color: #4040a0; /* Basado en tu tema café/naranja */
+    --btn-color: #4566a3;
+    --btn-hover: #2f317a;
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -171,8 +171,9 @@ header p {
 
 .tags span {
     font-size: 0.7rem;
-    background: rgba(230, 177, 138, 0.1);
+    background: rgba(109, 109, 109, 0.1);
     color: var(--btn-color);
+    font-weight: bold;
     padding: 4px 10px;
     border-radius: 6px;
     margin-right: 5px;
