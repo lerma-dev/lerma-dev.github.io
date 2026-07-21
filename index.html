@@ -1,89 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hector | Dev Portal & Proyectos</title>
-    
-    <meta name="description" content="Portal oficial de Hector Lerma. Hub de aplicaciones PWA, herramientas web y proyectos de software de alto rendimiento.">
-    <meta name="google-site-verification" content="aiOjuCCGcztmX18SNGyRPQYU0e1gkf9K9t0FeQRs0OE" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/sgv+xml" href="lerma-tech.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LERMA.TECH - Portal</title>
+  <meta
+    name="description"
+    content="Portal oficial de LERMA.TECH. Encuentra aplicaciones web, PWA, APKs y ejecutables creados por Héctor Lerma, libres de anuncios y de uso libre."
+  />
+  <!-- Open Graph para Redes Sociales (WhatsApp, Discord, etc.) -->
+  <meta property="og:title" content="LERMA.TECH - Portal de Aplicaciones" />
+  <meta property="og:description" content="Explora aplicaciones web, PWA y herramientas libres de anuncios creadas por @LERMA.TECH." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lerma-dev.github.io/" />
+
+  <meta name="google-site-verification" content="aiOjuCCGcztmX18SNGyRPQYU0e1gkf9K9t0FeQRs0OE" />
+  <meta name="robots" content="index, follow" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/assets/styles/style.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/lerma-tech.svg">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">LERMA<span>.DEV</span></div>
-        <div class="nav-links">
-            <a href="#proyectos">Proyectos</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="https://github.com/lerma-dev" class="btn-github" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <nav id="navbar">
+    <div id="logo-navbar" class="logo">
+      <img src="/assets/icons/lerma-tech.svg" alt="logo lerma.tech" class="logo-img">
+      <div class="logo-text">
+        LERMA<span>.TECH</span>
+      </div>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <l-icon id="menu-icon" name="menu"></l-icon>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="#aplicaciones">Aplicaciones</a>
+      <a href="#sobre-mi">Sobre el Portal</a>
+      <a href="https://github.com/lerma-dev" class="btn-github" target="_blank" rel="noopener noreferrer">
+        <l-icon name="logo-github"></l-icon>
+        GitHub
+      </a>   
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <h1>Mis Aplicaciones</h1>
+      <p>
+        Explora todas mis aplicaciones web, móviles o de escritorio publicadas aquí. Todas están libres de anuncios, así que no tendrás nada intrusivo molestándote al explorarlas. Siente la libertad de usarlas y compartirlas para que más gente conozca estas increíbles aplicaciones hechas por <strong>@LERMA.TECH</strong>. 
+      </p>
+      <p>
+        Muy pronto abriré un sitio donde podrás ver los detalles de cada aplicación antes de acceder o descargarla, dejar tus estrellas y comentar qué te parecieron. El enlace estará disponible muy pronto en la parte inferior.
+      </p>
+      <a href="#aplicaciones" class="cta-button">VER APLICACIONES</a>
+    </div>
+  </header>
+
+  <main id="aplicaciones" class="container">
+    <h2 class="section-title">Tienda de Aplicaciones</h2>
+      
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-image">
+          <img src="/screenshots/local-tunes/view-pwa.webp" alt="Vista previa de Local Tunes PWA" loading="lazy">
+          <span class="badge badge-prod">Produccion</span>
         </div>
-    </nav>
-
-    <header>
-        <div class="hero-content">
-            <h1>Mis Aplicaciones WEB y PWA</h1>
-            <p>Explora mis proyectos web, desde reproductores PWA hasta herramientas de productividad. Privacidad, velocidad y diseño funcional.</p>
-            <a href="#proyectos" class="cta-button">VER PROYECTOS</a>
-        </div>
-    </header>
-
-    <main id="proyectos" class="container">
-        <h2 class="section-title">Proyectos Desplegados</h2>
-        
-        <div class="project-grid">
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="./screenshots/music-pwa/desktop-view.webp" alt="Local Tunes">
-                    <span class="badge badge-prod">Version Beta</span>
-                </div>
-                <div class="project-info">
-                    <div class="tags">
-                        <span>PWA</span> <span>JS</span> <span>Audio</span>
-                    </div>
-                    <h3>Music App</h3>
-                    <p>Reproductor de archivos locales con visualizador de frecuencias y soporte offline total. Sin servidores, 100% privado.</p>
-                    <div class="project-links">
-                        <a href="https://lerma-dev.github.io/local-tunes" class="link-primary open-app">Abrir App →</a>
-                        <a href="https://github.com/lerma-dev/local-tunes" class="link-secondary">Código</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project-card">
-            <div class="project-image">
-                <img src="./screenshots/calc-lerma/calculadora.png" alt="Mi Música PWA">
-                <span class="badge badge-prod">En Produccion</span>
+        <div class="project-info">
+          <div class="tags">  
+            <span>PWA</span> 
+            <span>JS</span> 
+            <span>Audio</span>
+          </div>
+            <h3>Local Tunes</h3>
+            <p>Reproductor de archivos locales con visualizador de frecuencias y soporte offline total. Sin servidores, 100% privado.</p>
+            <div class="project-links">
+              <a 
+                href="https://local-tunes.netlify.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-primary">
+                <l-icon name="open-outline"></l-icon>
+                Abrir App
+              </a>
+              <a 
+                href="https://lerma-dev.github.io/local-tunes" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-secondary">
+                <l-icon name="open-outline"></l-icon>
+                Ver Beta
+              </a>
+              <a  
+                href="https://github.com/lerma-dev/local-tunes" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="link-secondary">
+                <l-icon name="code"></l-icon>
+                Código 
+              </a>
             </div>
-            <div class="project-info">
-                <div class="tags">
-                    <span>WEB</span>  <span>CSS</span>  <span>JS</span>
-                </div>
-                <h3>Calculadora-Web Basica</h3>
-                <p>Esta calculadora es una calculadora web que solo resuelve operaciones basicas </p>
-                <div class="project-links">
-                    <a  href="https://calc-lerma.netlify.app/" class="link-primary open-app">Abrir App →</a>
-                    <a href="https://github.com/lerma-dev/Calculadora-Web" class="link-secondary">Código</a>
-                </div>
-            </div>
-
-            </div>
-    </main>
-
-    <section id="sobre-mi" class="about-section">
-        <div class="container">
-            <h2>Sobre el Portal</h2>
-            <p>Este es mi "Entry Point" oficial. Aquí centralizo todas las versiones beta de mis repositorios de GitHub y las versiones finales desplegadas en Netlify.</p>
         </div>
-    </section>
+      </article>
 
-    <footer>
-        <p>&copy; 2026 Hector Lerma.</p>
-        <div class="footer-links">
-            <a href="https://github.com/lerma-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <article class="project-card">
+        <div class="project-image">
+          <img src="/screenshots/local-tunes/view-desktop.webp" alt="Vista previa de Escritorio de Local tunes" loading="lazy">
+          <span class="badge badge-desktop">Windows</span>
         </div>
-    </footer>
+        <div class="project-info">
+          <div class="tags">  
+            <span>Win32</span> 
+            <span>Musica</span>
+          </div>
+            <h3>Local Tunes (Desktop)</h3>
+            <p>Versión de escritorio de tu reproductor de audio, equipada con una barra de título personalizada y una capa web optimizada para ofrecer total privacidad sin servidores y con reproduccion en segundo plano.</p>
+            <div class="project-links">
+              <a 
+                href="/packages/local-tunes/local_tunes_v1.6.6.exe" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-primary open-app" download>
+                <l-icon name="download-outline"></l-icon>
+                Descargar
+              </a>
+              <a  
+                href="https://github.com/lerma-dev/local-tunes" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="link-secondary">
+                <l-icon name="code"></l-icon>
+                Código 
+              </a>
+            </div>
+        </div>
+      </article>
 
+      <article class="project-card">
+        <div class="project-image">
+          <img src="/screenshots/tic-tac-toe/game_tictactoe.webp" alt="Vista previa de TicTacToe" loading="lazy">
+          <span class="badge badge-mobile">Mobile</span>
+        </div>
+        <div class="project-info">
+          <div class="tags">  
+            <span>Android</span> 
+            <span>Game</span>
+            <span>Kotlin</span>
+          </div>
+            <h3>Tic-Tac-Toe</h3>
+            <p>El clásico juego de estrategia adaptado como aplicación móvil nativa. Disfruta de partidas locales rápidas con una interfaz limpia, fluida y diseñada para dispositivos Android.</p>
+            <div class="project-links">
+              <a 
+                href="/packages/tic-tac-toe/tic_tac_toe_v1.0.apk" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-primary open-app" download>
+                <l-icon name="download-outline"></l-icon>
+                Descargar
+              </a>
+              <a  
+                href="https://github.com/lerma-dev/tictactoe-android.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="link-secondary">
+                <l-icon name="code"></l-icon>
+                Código 
+              </a>
+            </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="/screenshots/calc-lerma/calculadora.webp" alt="Vista previa de Calculadora Web Básica" loading="lazy">
+          <span class="badge badge-prod">Producción</span>
+        </div>
+        <div class="project-info">
+          <div class="tags">
+            <span>WEB</span>  
+            <span>CSS</span>  
+            <span>JS</span>
+          </div>
+            <h3>Calculadora-Web Básica</h3>
+            <p>Calculadora web intuitiva y ligera diseñada para resolver operaciones matemáticas básicas de forma rápida.</p>
+            <div class="project-links">
+              <a  
+                href="https://calc-lerma.netlify.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="link-primary open-app">
+                <l-icon name="open-outline"></l-icon>
+                Abrir App 
+              </a>
+              <a 
+                href="https://github.com/lerma-dev/Calculadora-Web" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="link-secondary">
+                <l-icon name="code"></l-icon>
+                Código
+              </a>
+            </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <section id="sobre-mi" class="about-section">
+    <div class="container">
+      <h2>Sobre el Portal</h2>
+      <p>Este es mi centro de operaciones principal. Un espacio diseñado para reunir y ofrecer acceso directo a todo tipo de desarrollo propio, abarcando herramientas web, aplicaciones móviles y software de escritorio sin intermediarios ni publicidad.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Hector Lerma.</p>
+    <div class="footer-links" style="display: flex; align-items: center; justify-content: center;">
+      <div class="facebook">
+        <l-icon name="logo-facebook" style="color: var(--btn-color);"></l-icon>
+        <a href="https://www.facebook.com/profile.php?id=61582995253561" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+      <div class="Instagram">
+        <l-icon name="logo-instagram" style="color: #a51bb8;"></l-icon>
+        <a href="https://www.instagram.com/lerma.tech?igsh=MTdlaGdmdnUwMXVyYQ==" target="_blank" rel="noopener noreferrer">Instagram</a>   
+      </div>
+      <div class="sitio-web">
+        <l-icon name="chatbubble"></l-icon>
+        <a href="https://lermatech.onrender.com" target="_blank" rel="noopener noreferrer">Deja tu comentario</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/scripts/icons.js"></script>
+  <script src="/assets/scripts/scripts.js"></script>
 </body>
 </html>

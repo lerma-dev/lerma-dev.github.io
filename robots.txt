@@ -1,0 +1,12 @@
+User-agent: *
+
+# Access Denied 
+Disallow: /packages/
+Disallow: /assets/
+Disallow: /screenshots/
+
+# Access Permmission 
+Allow: /
+
+Sitemap: https://lerma-dev.github.io/sitemap.xml
+

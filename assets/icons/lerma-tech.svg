@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="lermatech" width="512px" height="512px">
+  <defs>
+    <path id="path-0" style="fill: none;" d="M 360.465 274.225 L 411.822 265.504 C 431.322 262.457 451.345 259.133 470.93 256.783"/>
+  </defs>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(24, 119, 242); stroke-width: 0px;" d="M 132.323 187.88 L 62.016 189.072 L 243.217 68.799 L 172.2 462.958 L 90.348 464.148 L 132.323 187.88 Z"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(24, 119, 242); stroke-width: 0px;" d="M 215.449 398.605 L 202.52 462.209 L 410.27 459.922 L 448.644 395.348 L 215.449 398.605 Z"/>
+  <path style="stroke: rgb(0, 0, 0); fill: rgb(24, 119, 242); stroke-width: 0px;" d="M 221.899 376.938 L 272.035 58.844 L 348.837 8.721 L 307.236 330.67 L 221.899 376.938 Z"/>
+</svg>
