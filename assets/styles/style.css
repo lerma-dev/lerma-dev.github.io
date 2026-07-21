@@ -4,7 +4,7 @@
   --text-color: #f1f1f5;
   --text-muted: #a1a1aa;
   --accent-color: #3b4298;
-  --btn-color: #1877f2;
+  --btn-color: #0866FF;
   --btn-hover: #3558b9;
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -223,6 +223,18 @@ header p {
   background-color: #050508;
 }
 
+.icono-app {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+}
+
+.icono-app img {
+  border-radius: 25%;
+}
+
 .badge {
   position: absolute;
   top: 15px;
@@ -234,26 +246,54 @@ header p {
   letter-spacing: 0.5px;
 }
 
-.badge-prod {
-  background: #3be7e7; 
-  color: #000;
+.share {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
-.badge-beta {
-  background: #ee7707;
+.badge-pwa {
+  background: #b5179e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.badge-web {
+  background: #f77f00;
   color: #000;
+  font-weight: bold;
 }
 
 .badge-mobile {
-  background: #3DDC84; 
+  background: #1dd353;
   color: #000;
+  font-weight: bold;
 }
 
 .badge-desktop {
   background: #0979f8;
   color: #fff;
+  font-weight: bold;
 }
 
+.btn-compartir-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  backdrop-filter: blur(4px);
+}
+
+.btn-compartir-card l-icon{
+  width: 25px;
+  height: 25px;
+}
 
 .project-info {
   padding: 25px;
@@ -293,15 +333,24 @@ header p {
 }
 
 .link-primary {
-  color: var(--btn-color);
+  background: var(--btn-color);
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 0.95rem;
   transition: var(--transition);
 }
 
+.link-primary.download {
+  background: #1dd353;
+}
+
 .link-primary:hover {
-  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  filter: brightness(1.15);
 }
 
 .link-secondary {
@@ -336,7 +385,7 @@ header p {
 }
 
 footer {
-  padding: 40px 0;
+  padding: 40px 20px;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.04);
   font-size: 0.85rem;
@@ -344,15 +393,27 @@ footer {
 }
 
 .footer-links {
-  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px 24px; /* Espacio adaptable entre elementos y filas */
+  margin-top: 16px;
 }
+
+.footer-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px; /* Separa de forma limpia el icono del texto */
+}
+
 .footer-links a {
   color: var(--text-color);
   text-decoration: none;
-  margin: 0 12px;
   opacity: 0.7;
   transition: var(--transition);
 }
+
 .footer-links a:hover {
   opacity: 1;
   color: var(--btn-color);
@@ -363,11 +424,15 @@ footer {
   transform: translateX(-50%) translateY(-120%);
   opacity: 0;
   pointer-events: none;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
 }
 
 #navbar {
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
 }
 
 /* Asegurar que el botón toggle sea visible solo en móviles */
@@ -463,5 +528,10 @@ footer {
   .nav-links a {
     width: 100%;
     text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 12px;
   }
 }
