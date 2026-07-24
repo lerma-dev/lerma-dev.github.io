@@ -18,7 +18,7 @@ class LermaIcon extends HTMLElement {
 
   render() {
     const name = this.getAttribute("name") || "help";
-    const path = `/assets/l-icon/${name}.svg`;
+    const path = `./assets/l-icon/${name}.svg`;
 
     this.shadowRoot.innerHTML = `
     <style>
